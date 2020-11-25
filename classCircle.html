@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>class circle</title>
+</head>
+<body>
+<script>
+    let Circle = function (r,color){
+        this.Radius = r;
+        this.Color= color;
+        this.getRadius=function (){
+            return this.Radius;
+        }
+        this.getShape=function (){
+            return this.Radius*this.Radius*Math.PI;
+        }
+        this.getColor=function (){
+            return this.Color;
+        }
+    }
+    let circle = new Circle(10,"red");
+    document.write(circle.getRadius()+"-"+circle.getShape()+"-"+circle.getColor())
+
+</script>
+</body>
+</html>
